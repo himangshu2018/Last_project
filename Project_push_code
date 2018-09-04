@@ -1,0 +1,10 @@
+  511  cd
+  512  cd desktop
+  513  cd GT
+  514  git init
+  515  git remote add origin 
+https://github.com/himangshu2018/Last_project.git
+  516  git remote -v
+  517  git add .
+  518  git commit -m "last project"
+  519  git push --set-upstream origin master

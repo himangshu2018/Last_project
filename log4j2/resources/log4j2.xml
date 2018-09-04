@@ -1,0 +1,25 @@
+<Configuration>
+	<Properties>
+		<Property name="MyProperty">C:\\Users\\himesh\\eclipse-workspace\\log4j2\\logs</Property>
+	</Properties>
+	
+	<Appenders>
+		<RollingFile name="File" fileName="${MyProperty}/result.log" filePattern="${MyProperty}/result-%d{yyyy-MM-dd}.log">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %c{3} -%msg%n"/>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+				<SizeBasedTriggeringPolicy size="100 KB"/>
+			</Policies>
+		</RollingFile>
+		<Console name="Console">
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} %-5level %c{3} -%msg%n"/>
+		</Console>
+	</Appenders>
+	
+	<Loggers>
+        <Root level="trace">
+			<AppenderRef ref="File"/>
+		</Root>
+	</Loggers>
+	
+</Configuration>

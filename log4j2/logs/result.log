@@ -1,0 +1,5 @@
+15:10:28.709 TRACE logs.LogA -trace massage
+15:10:28.709 DEBUG logs.LogA -debug massage
+15:10:28.709 INFO  logs.LogA -info massage
+15:10:28.709 ERROR logs.LogA -error massage
+15:10:28.709 FATAL logs.LogA -fatal massage
